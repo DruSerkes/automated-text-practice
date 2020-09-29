@@ -14,7 +14,7 @@ def job():
     schedule.clear(daily_tag)
 
 
-schedule.every().day.at("9:00").do(job).tag(daily_tag)
+schedule.every().day.at("09:00").do(job).tag(daily_tag)
 
 while True:
     schedule.run_pending()
